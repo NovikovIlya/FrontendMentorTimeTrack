@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import styles from "./Main.module.css";
 import image from "../assets/image-jeremy.png";
 import iconWork from "../assets/icon-work.svg";
