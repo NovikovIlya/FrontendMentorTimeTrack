@@ -1,0 +1,127 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "one two three four"
+    "one five six seven";
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+.one,.two,.three,.four,.five,.six,.seven{
+  background-color: white;
+  border-radius: 10px; 
+  position: relative;
+  justify-content: end;
+  display: flex;
+  flex-direction: column;  
+}
+
+.one{
+  background-color: #1D204B ;
+}
+.orange{
+  background-color: #FF8B64;
+}
+.btn{
+  cursor: pointer;
+}
+.active{
+  color: white;
+}
+.wrapper{
+    width: 220px;
+   
+}
+.icon{
+  
+  top: 0;
+  position: absolute;
+  right: 10px;
+
+}
+.images {
+  width: 60px;
+}
+.text{
+    color:rgba(255, 255, 255, 0.507);
+    text-align: left;
+}
+.up{
+    background-color: #5746EA;
+    border-radius: 10px;
+    padding: 20px;
+   
+}
+.bottom{
+    padding: 20px;
+    
+}
+.headText{
+    font-size: 30px;
+    color:white;
+}
+.card{
+  background-color: #1D204B;
+  color:rgba(255, 255, 255, 0.507);
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.cardHead{
+  display: flex;
+  justify-content: space-between;
+}
+.headCard{
+  font-size: 20px;
+  color:white;
+}
+.hrs{
+  font-size: 30px;
+  color:white;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+   display: flex;
+   flex-direction: column;
+
+  }
+  .card{
+    margin-top: 20px;
+  }
+
+  
+}
